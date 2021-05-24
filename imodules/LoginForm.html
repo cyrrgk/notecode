@@ -1,0 +1,24 @@
+<div id="LoginForm" imodule="/iscripts/imodules/LoginForm.js">
+    <style>@charset "UTF-8";#LoginForm{width:408px}#LoginForm .login-title{height:30px;font-size:30px;font-weight:600;color:#333;margin-left:30px;margin-top:36px;margin-bottom:40px;line-height:1}#LoginForm .login-label{display:block;height:12px;font-size:12px;font-weight:600;line-height:1;color:#333;margin-left:30px}#LoginForm .login-phone{position:relative;width:100%;height:56px;margin-top:21px}#LoginForm .login-code{position:relative;width:100%;height:56px;margin-top:21px}#LoginForm .form-control{border:none;-webkit-box-shadow:none;box-shadow:none;padding:0;padding-left:30px;font-size:14px;font-weight:300;line-height:1;color:#b3b5b7;width:100%;height:23px;line-height:23px;padding-top:23px;padding-bottom:22px;border-radius:0;border-bottom:solid 1px #e3e8ee}#LoginForm input:focus{text-align:left;border-bottom:solid 1px #003894}#LoginForm .getcode{position:absolute;text-align:right;width:139px;height:14px;font-size:14px;font-weight:300;line-height:1;color:#b3b5b7;right:27px;bottom:14px;outline:0;border:none;background-color:transparent;padding:0}#LoginForm .login-btn{margin:60px 30px 45px;position:relative}#LoginForm .login-btn .btn{width:100%;height:55px;border-radius:2px;background-color:#003894;padding:0;margin:0;font-weight:600}#LoginForm .phone-check{display:none;position:absolute;right:27px;top:21px;height:14px;font-size:20px;font-weight:300;line-height:1;color:#fe3824}#LoginForm .icon-error{width:15.1px;height:15.1px;font-size:15.1px;display:inline;margin-right:8.5px}#LoginForm .error-data{font-size:14px;display:inline}#LoginForm .code-check{display:none;position:absolute;top:-50px;height:14px;font-weight:300;line-height:1;color:#fe3824}#LoginForm .btn-primary{border-color:transparent;background-color:#4785f9}#LoginForm .btn-primary:hover{background:#357ae8}#LoginForm .btn-primary:active{-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,.125);box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}#LoginForm .inquiry-tips{display:none;width:240px;position:absolute;height:14px;left:60px;bottom:-25px;font-size:14px;font-weight:300;line-height:1;color:#f5a623}</style>
+    <div class="content">
+        <div class="login-title">登录·注册</div>
+        <form method="post" ievent="submitForm" idom="form" autocomplete="off">
+            <div class="login-phone">
+                <span class="login-label">手机号</span>
+                <input type="text" class="form-control phone" ievent="getPhone" placeholder="您的手机号" name="mobile">
+                <div class="phone-check"></div>
+            </div>
+            <div class="login-code">
+                <span class="login-label">验证码</span>
+                <input type="text" class="form-control code" placeholder="输入验证码" name="captcha">
+                <button class="getcode" type="button" ievent="getCaptcha" name="getCaptcha">获取验证码</button>
+            </div>
+
+            <div class="login-btn">
+                <div class="code-check"><span class="icon-error"></span><span class="error-data">验证码输入有误</span></div>
+                <button id="login" type="submit" class="btn btn-primary">确认</button>
+                <div class="inquiry-tips"><span class="icon-error"></span>您已有项目未完成，可登录去查看</div>
+            </div>
+        </form>
+    </div>
+</div>

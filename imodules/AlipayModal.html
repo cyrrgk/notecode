@@ -1,0 +1,18 @@
+
+<div id="AlipayModal" imodule="/iscripts/imodules/AlipayModal.js">
+  <style>@charset "UTF-8";@media screen and (max-width:768px){#AlipayModal h1,#AlipayModal h2,#AlipayModal h3,#AlipayModal h4,#AlipayModal li,#AlipayModal ul{padding:0;margin:0}#AlipayModal form{font-size:0}#AlipayModal .submit{margin:0 9%;width:82%;line-height:.24rem;height:.44rem}#AlipayModal .pos{padding-bottom:.35rem}#AlipayModal h2{text-align:center;color:#333;font-size:.18rem;padding-top:.4rem}#AlipayModal h1{text-align:center;color:#333;font-size:.18rem;margin:.18rem 0 .375rem 0}#AlipayModal h1 span{font-size:.32rem;margin-left:5px}#AlipayModal .alipay-select{padding:0 0 .5rem}#AlipayModal .alipay-select .tip-code{float:left;height:.2rem;line-height:.2rem;margin-top:.14rem;font-size:.14rem}#AlipayModal .alipay-select .tip-obtain{background-color:transparent;float:right;color:#fd4701;margin-top:.14rem;font-size:.14rem}#AlipayModal .tip-sent{margin-top:-.05rem;padding-bottom:.36rem}#AlipayModal .alipay-select li{width:100%;overflow:hidden;padding-left:.2rem;line-height:.48rem;border-bottom:1px solid #e3e8ee;cursor:pointer;height:.48rem;list-style:none}#AlipayModal .alipay-select li>i{float:left;width:.29rem;height:.29rem;background:url(/images/imodules/AlipayModal/alipay.png) no-repeat;margin:.09rem .1rem 0 0;display:inline;background-size:.29rem auto}#AlipayModal .alipay-select li>i.alipay-wechart{background:url(/images/imodules/AlipayModal/pay-wechart.png) no-repeat;background-size:.29rem auto}#AlipayModal .alipay-select li>i.alipay-bank{background:url(/images/imodules/AlipayModal/pay-bank.png) no-repeat;background-size:.29rem auto}#AlipayModal .alipay-select li>span{float:left;color:#2a2e33;font-size:.14rem}#AlipayModal .tip-btn-box{padding:0 .32rem}#AlipayModal .tip-btn-box .btn{display:block}}@media screen and (min-width:768px){#AlipayModal{width:400px;height:386px}#AlipayModal form{*display:block;*padding-top:40px;position:relative;width:300px;margin:40px auto 30px}#AlipayModal form>div{border-bottom:1px solid #e0e3e6}#AlipayModal h2{color:#2a2e33;font-weight:400;font-size:12px;text-align:center;width:108px;margin:0 auto;line-height:19px}#AlipayModal h1{color:#fd4701;font-weight:400;font-size:26px;text-align:center;margin-top:9px}#AlipayModal h1 span{font-size:26px}#AlipayModal .alipay-select{width:300px;margin:64px auto 0;border-top:1px solid #e0e3e6;padding-bottom:67px}#AlipayModal .alipay-select li{width:100%;overflow:hidden;line-height:58px;border-bottom:1px solid #e0e1e6;cursor:pointer;list-style:none}#AlipayModal .alipay-select li>i{float:left;width:22px;height:23px;background:url(/images/imodules/AlipayModal/alipay.png) no-repeat;margin:18px 10px 0 0;display:inline;background-size:22px auto}#AlipayModal .alipay-select li>span{float:left;color:#2a2e33;font-size:14px}#AlipayModal .aipay-skip{width:6px;height:10px;background:url(/images/imodules/AlipayModal/skip.png) no-repeat;float:right;margin-top:24px;display:inline;background-size:6px auto}#AlipayModal .btn{width:100%;height:36px;padding:0;cursor:pointer;display:inline-block;line-height:36px}}</style>
+  <form method="post">
+    <h2 idom="title">请交纳订金</h2>
+    <h1>&yen;<span class="deposit">42,000</span></h1>
+    <ul class="alipay-select">
+        <li>
+            <i class="alipay-bao"></i>
+            <span>支付宝</span>
+            <a href="javascript:;"></a>
+        </li>
+    </ul>
+    <a class="btn btn-primary submit" id="paynow" idom="submitBtn" href="javascript:;" ievent="doPay">立即支付</a>
+    <div class="pos"></div>
+  </form>
+</div>
+

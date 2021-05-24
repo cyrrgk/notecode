@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/*   快速查找索引(字母顺序):
+ *
+ *      background       ----   背景图片
+ *      opacity          ----   透明度
+ *      text-ellipsis    ----   单行文本超出自动省略
+ *
+ *
+ *
+*/
+/*
+ * background-size的默认值是100% 100% ,background-position的默认值是 0 0 ;
+ * ====!!!---图片路径参数 切记要用单引号---!!!====
+
+ * 此处可以传参数的个数为:
+ *     1个参数: 即只用传 图片路径,其他默认
+ *                  eg: @include background('images/logo.png')
+ *
+ *     2个参数: 即只用传 图片路径, size值为cover或者contain
+ *                  eg: @include background('images/logo.png',cover)
+ *
+ *     3个参数: 即只用传 图片路径, size宽高值为 两个数值或百分比
+ *                  eg: @include background('images/logo.png',40px,40px)
+ *
+ *     4个参数: 即只用传 图片路径, size宽高值为 两个数值或百分比, position只传水平位置(X轴)的值
+ *                  eg: @include background('images/logo.png',40px,40px,center)
+ *
+ *     5个参数: eg: @include background('images/logo.png',40px,40px,center,top)
+ *
+ */
+/*
+ *     支持单个参数,数值在 0-1 之间;
+*/
+/*
+ *     支持参数,宽度的百分比值,默认100%;
+*/
+/*
+ *     支持单个参数,数值在 0-1 之间;
+*/
+/*
+ *     支持参数,宽度的百分比值,默认100%;
+*/
+.center {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.shadow_on {
+  -webkit-box-shadow: 0 0 5px #ccc;
+          box-shadow: 0 0 5px #ccc;
+  position: relative;
+  z-index: 222;
+  border-bottom: 1px solid #efefef \9; }
+
+#container {
+  top: 58px !important;
+  height: auto; }
+
+.screen .pin {
+  content: '';
+  width: 26px;
+  height: 38px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-size: 26px 38px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.input {
+  display: block;
+  padding: 10px;
+  color: #8D8D8E;
+  border-radius: 3px;
+  font-size: 14px !important;
+  border: none;
+  background: #fff;
+  outline: 0; }
+
+.hoverBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 319; }
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background-image: url("/images/ui/close-new.png");
+  background-image: none\0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  /*-For-IE8-*/
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/images/ui/close-new.png,sizingMethod=scale);
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/images/ui/close-new.png,sizingMethod=scale)";
+  z-index: 9;
+  opacity: 1; }
+
+.close:hover {
+  background-image: url("/images/ui/close-new-hover.png");
+  background-image: none\0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  /*-For-IE8-*/
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/images/ui/close-new-hover.png,sizingMethod=scale);
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/images/ui/close-new-hover.png,sizingMethod=scale)";
+  opacity: 1; }
+
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+  outline: 0;
+  outline: none; }
+
+.wHide {
+  display: none !important; }
+
+.wVisno {
+  visibility: hidden !important; }
+
+.btn-loading {
+  overflow: hidden;
+  text-indent: -999rem;
+  ursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  position: relative; }
+
+.btn-loading:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin: -9px 0 0 -9px;
+  background-image: url(/global/images/btn-loading-new.svg);
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center center;
+  -ms-behavior: url(/iscripts/libs/ie8/backgroundsize.min.htc);
+  behavior: url(/iscripts/libs/ie8/backgroundsize.min.htc);
+  *background-image: url(/global/images/btn-loading@1x.gif);
+  -webkit-animation: loader 1s linear infinite;
+  animation: loader 1s linear infinite; }
+
+@-webkit-keyframes loader {
+  from {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0); }
+  to {
+    -webkit-transform: rotate(360deg) translateZ(0);
+    transform: rotate(360deg) translateZ(0); } }
+
+@keyframes loader {
+  from {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0); }
+  to {
+    -webkit-transform: rotate(360deg) translateZ(0);
+    transform: rotate(360deg) translateZ(0); } }
+
+body, html, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
+  font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif; }

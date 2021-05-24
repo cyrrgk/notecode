@@ -1,0 +1,27 @@
+<div id="CitySelector" imodule="/iscripts/imodules/CitySelector.js">
+    <div class="hd">
+        <h1 class="title">已开通以下城市</h1>
+        <h3 class="localtion"><span class="icon-location-pcs mark"></span><strong idom="curCity">郑州</strong></h3>
+        <div class="search">
+            <input id="CitySelector-search" type="text" class="filter" placeholder="请输入城市名开始查找..." />
+        </div>
+    </div>
+    <div class="bd">
+        <style>@charset "UTF-8";#CitySelector{width:700px;height:650px;padding:30px;padding-right:0;font-size:14px}#CitySelector a{color:#666}#CitySelector a:hover{color:#333}#CitySelector dd,#CitySelector dl{line-height:1.8}#CitySelector .hd{padding-right:30px}#CitySelector .title{font-size:30px;color:#333;margin-top:5px;font-weight:700}#CitySelector .localtion{font-size:20px;margin:40px 0 15px}#CitySelector .bd{padding-top:30px}#CitySelector .list a{width:94px;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}#CitySelector .list dl{padding-left:96px;position:relative;display:none}#CitySelector .list dl.hots{padding-left:0}#CitySelector .list dl.selected{display:block}#CitySelector .list dd{padding-bottom:15px}#CitySelector .list dt{position:absolute;left:0;font-size:18px;color:#b3b5b7}#CitySelector dl.index{padding-left:96px;position:relative;margin-bottom:45px}#CitySelector .index dt{position:absolute;left:0;font-size:15px}#CitySelector .index dd a{display:inline-block;padding-right:48px;font-size:15px;color:#b3b5b7;font-weight:700}#CitySelector .index a:hover{color:#333}#CitySelector .index .selected{color:#333}#CitySelector .filter{width:100%;border:none;border-bottom:#e3e8ee 1px solid;padding:10px 0;color:#b3b5b7;padding-top:10px}#CitySelector .filter:focus{border:none;border-bottom:#003894 1px solid;outline:0}#CitySelector .icon-location-pcs{color:#003894;background:0 0}@media screen and (max-width:768px){#CitySelector{width:100%;height:100%}}.ui-autocomplete{z-index:9999999;position:absolute;background:#fff;padding:20px;line-height:2;border:#e3e8ee 1px solid;margin:0;list-style:none}.ui-autocomplete .ui-menu-item{padding:0;margin:0;list-style:none;font-size:14px}.ui-autocomplete a{color:#666}.ui-autocomplete a:hover{color:#003894}.ui-helper-hidden-accessible{display:none!important}</style>
+        <dl class="index" ievent="changeCard" idom="index">
+            <dt><a href="#" class="selected" card="0">热门</a></dt>
+            <dd>
+                <a href="#" card="1">ABCDE</a>
+                <a href="#" card="2">FGHIJ</a>
+                <a href="#" card="3">KLMNOP</a>
+                <a href="#" card="4">QRSTUV</a>
+                <a href="#" card="5">WXYZ</a>
+            </dd>
+        </dl>
+
+        <div class="list" idom="list" ievent="changeCity">
+
+        </div>
+
+    </div>
+</div>

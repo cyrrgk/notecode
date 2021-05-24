@@ -1,0 +1,34 @@
+{
+  "fontReview/Font/font.pg.html": [
+    "track/Track/main.md.html"
+  ],
+  "about/AboutPage/about.pg.html_": [
+    "common/Header/main.md.html",
+    "about/AboutForm/main.md.html",
+    "common/ItemFooter/main.md.html"
+  ],
+  "admin/assignTasks/admin@assign-tasks.pg.html_": [
+    "common/Header/main.md.html"
+  ],
+  "admin/demandDetail/admin@demand-detail.pg.html_": [
+    "common/Header/main.md.html"
+  ],
+  "admin/schedule/admin@schedule.pg.html_": [
+    "common/Header/main.md.html"
+  ],
+  "admin/serviceProcess/admin@service-process.pg.html_": [
+    "common/Header/main.md.html"
+  ],
+  "home/FiveHundred/500.pg.html_": [],
+  "home/FiveZeroTwo/502.pg.html_": [],
+  "home/FourZeroFour/404.pg.html_": [],
+  "salesmen/demandList/salesmen@demand-list.pg.html_": [
+    "common/Header/main.md.html"
+  ],
+  "home/test/IModuleLoader/test@imodule.pg.html_": [],
+  "home/test/IModules/test@index.pg.html_": [],
+  "home/test/ImageUploaderDemo/test@image-uploader.pg.html_": [
+    "misc/ImageUploader/main.md.html"
+  ],
+  "home/test/TestAgent/test@agent.pg.html_": []
+}

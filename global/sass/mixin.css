@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*   快速查找索引(字母顺序):
+ *
+ *      background       ----   背景图片
+ *      opacity          ----   透明度
+ *      text-ellipsis    ----   单行文本超出自动省略
+ *
+ *
+ *
+*/
+/*
+ * background-size的默认值是100% 100% ,background-position的默认值是 0 0 ;
+ * ====!!!---图片路径参数 切记要用单引号---!!!====
+
+ * 此处可以传参数的个数为:
+ *     1个参数: 即只用传 图片路径,其他默认
+ *                  eg: @include background('images/logo.png')
+ *
+ *     2个参数: 即只用传 图片路径, size值为cover或者contain
+ *                  eg: @include background('images/logo.png',cover)
+ *
+ *     3个参数: 即只用传 图片路径, size宽高值为 两个数值或百分比
+ *                  eg: @include background('images/logo.png',40px,40px)
+ *
+ *     4个参数: 即只用传 图片路径, size宽高值为 两个数值或百分比, position只传水平位置(X轴)的值
+ *                  eg: @include background('images/logo.png',40px,40px,center)
+ *
+ *     5个参数: eg: @include background('images/logo.png',40px,40px,center,top)
+ *
+ */
+/*
+ *     支持单个参数,数值在 0-1 之间;
+*/
+/*
+ *     支持参数,宽度的百分比值,默认100%;
+*/
+/*
+ *     支持单个参数,数值在 0-1 之间;
+*/
+/*
+ *     支持参数,宽度的百分比值,默认100%;
+*/

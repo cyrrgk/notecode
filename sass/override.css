@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*   快速查找索引(字母顺序):
+ *
+ *      background       ----   背景图片
+ *      opacity          ----   透明度
+ *      text-ellipsis    ----   单行文本超出自动省略
+ *
+ *
+ *
+*/
+/*
+ * background-size的默认值是100% 100% ,background-position的默认值是 0 0 ;
+ * ====!!!---图片路径参数 切记要用单引号---!!!====
+
+ * 此处可以传参数的个数为:
+ *     1个参数: 即只用传 图片路径,其他默认
+ *                  eg: @include background('images/logo.png')
+ *
+ *     2个参数: 即只用传 图片路径, size值为cover或者contain
+ *                  eg: @include background('images/logo.png',cover)
+ *
+ *     3个参数: 即只用传 图片路径, size宽高值为 两个数值或百分比
+ *                  eg: @include background('images/logo.png',40px,40px)
+ *
+ *     4个参数: 即只用传 图片路径, size宽高值为 两个数值或百分比, position只传水平位置(X轴)的值
+ *                  eg: @include background('images/logo.png',40px,40px,center)
+ *
+ *     5个参数: eg: @include background('images/logo.png',40px,40px,center,top)
+ *
+ */
+/*
+ *     支持单个参数,数值在 0-1 之间;
+*/
+/*
+ *     支持参数,宽度的百分比值,默认100%;
+*/
+/*
+ *     支持单个参数,数值在 0-1 之间;
+*/
+/*
+ *     支持参数,宽度的百分比值,默认100%;
+*/
+.container, .container-fluid {
+  position: relative; }
+
+.container-fluid {
+  padding: 0; }
+
+div[class^="col-"] {
+  position: relative; }
+
+.-immy-dialog-header .tool-close {
+  width: 16px;
+  height: 16px;
+  padding-left: 0;
+  margin-top: 15px;
+  margin-right: 10px;
+  display: none; }
+
+.-immy-dialog-mask .tool-close {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  font-size: 20px; }
+
+.-immy-dialog-mask .tool-close:hover {
+  color: #b3b5b7; }
+
+@media screen and (max-width: 768px) {
+  .-immy-dialog-header .tool-close {
+    display: block; }
+  .-immy-dialog-mask .tool-close {
+    display: none; } }
+
+#MEIQIA-BTN-HOLDER {
+  right: 70px !important;
+  z-index: 333 !important; }
+
+#MEIQIA-INVITE {
+  margin-bottom: 5px !important;
+  right: 150px;
+  bottom: 0px; }
+
+#MEIQIA-INVITE #MEIQIA-INVITE-CLOSE {
+  background: url("/global/images/icon-mq-round.png") center -12px no-repeat !important; }
