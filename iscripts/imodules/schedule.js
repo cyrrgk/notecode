@@ -7,19 +7,23 @@ define(["/global/iscripts/libs/time/moment.js", "/global/iscripts/libs/time/twix
 
             var data = [
                 {
-                    "project": "太古里SOHO",
+                    "name": "太古里SOHO",
                     "in_city": "北京",
-                    "day_start": "2017-4-22",
+                    "day_start": "2017-4-12",
                     "day_end": "2017-4-28",
                 },
                 {
-                    "project": "布达拉宫广场",
+                    "name": "布达拉宫广场",
                     "in_city": "拉萨",
                     "day_start": "2017-5-1",
                     "day_end": "2017-5-4",
                 }
             ];
 
+            if (1 == qs('test')) {
+                return;
+            }
+            
             var ctx = this.prepare(data);
             var toUse = this.genReadyToUseData(ctx);
             this.doRender(toUse);
@@ -72,6 +76,7 @@ define(["/global/iscripts/libs/time/moment.js", "/global/iscripts/libs/time/twix
 
             var cell_width = 50;
             return {
+                total: ctx.projects.length,
                 header: {
                     days: ctx.range, // range: [moment]
                     fn: {
@@ -79,7 +84,8 @@ define(["/global/iscripts/libs/time/moment.js", "/global/iscripts/libs/time/twix
                             return this.date();
                         },
                         weekday: function() {
-                            return this.day();
+                            var wd = ['日', '一', '二', '三', '四', '五', '六'];
+                            return wd[this.day()];
                         }
                     },
                 },
@@ -100,7 +106,7 @@ define(["/global/iscripts/libs/time/moment.js", "/global/iscripts/libs/time/twix
         CON.prototype.doRender = function(ctx) {
             var _this = this;
             var dom = Mustache.render(this.tpl, ctx); 
-            this.find('#foo').html(dom);
+            this.find('#main-body').append(dom);
         }
 
         CON.prototype._ievent_ = function(data, target, hit) {
