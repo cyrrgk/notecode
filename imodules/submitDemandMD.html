@@ -1,0 +1,31 @@
+<div id="submitDemandMD" imodule="/iscripts/imodules/submitDemandMD.js">
+    <style>@charset "UTF-8";#submitDemandMD{width:400px;padding:40px;background-color:#fff}#submitDemandMD .submit-title{height:42px;line-height:42px;font-size:30px;color:#333;letter-spacing:0;display:-webkit-flex;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end}#submitDemandMD .submit-title .project-put-user{height:20px;line-height:20px;font-size:12px;color:#8b9aab;letter-spacing:0;position:relative;top:-6px}#submitDemandMD .input-half{width:150px;height:50px;background:#fff;border:1px solid #e3e8ee;border-radius:2px;font-size:14px;color:#8b9aab;padding:0 15px}#submitDemandMD .project-item{margin-top:40px}#submitDemandMD .project-name{width:320px;height:50px;background:#fff;border:1px solid #e3e8ee;border-radius:2px;padding:0 15px;font-size:14px;color:#8b9aab}#submitDemandMD .input-textarea{outline:0;list-style:none;width:100%;height:114px;font-size:14px;font-weight:300;line-height:1;color:#333;border:none;-webkit-box-shadow:none;box-shadow:none;-webkit-appearance:none;padding:15px;background:#fff;border:1px solid #e3e8ee;border-radius:2px;resize:none;margin:20px 0;color:#8b9aab}#submitDemandMD .input-div::-webkit-input-placeholder{color:#8b9aab!important}#submitDemandMD .input-div:-moz-placeholder{color:#8b9aab!important}#submitDemandMD .input-div::-moz-placeholder{color:#8b9aab!important}#submitDemandMD .input-div:-ms-input-placeholder{color:#8b9aab!important}#submitDemandMD .submit-picture .file-upload{display:inline-block;vertical-align:top;width:113px;height:70px;background:#f7faff;border:1px solid #e3e8ee;border-radius:2px;position:relative}#submitDemandMD .submit-picture .submit-picture-tips{height:70px;line-height:70px;display:inline-block;font-family:PingFangSC-Light;font-size:14px;color:#8b9aab;letter-spacing:0;margin-left:20px;vertical-align:top}#submitDemandMD .project-set-user{display:-webkit-flex;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end;margin-top:31px}#submitDemandMD .btn{width:120px;height:46px;background:#003894;border-radius:2px;padding:0;margin:49px 0 0 0;font-weight:600}#submitDemandMD .file-error{font-size:12px;color:#fe3824;position:absolute;left:0;top:73px;width:238px}#submitDemandMD .file-error .icon-mark{margin-right:5px;vertical-align:-1px}#submitDemandMD .fileuploading{position:absolute;left:-1px;top:-1px;width:114px;height:70px;border:1px solid #4785f9;text-align:center;line-height:70px;background-color:#fff;color:#003894;font-size:12px}#submitDemandMD .file-add{position:absolute;left:-1px;top:-1px;width:114px;height:70px;text-align:center;line-height:70px;cursor:pointer}</style>
+    <div class="submit-title">
+        <span class="submit-title-name">提交新需求</span>
+        <span class="project-put-user">销售员  乐乔佳  0012</span>
+    </div>
+    <form method="post" ievent="submitForm" idom="form" autocomplete="off">
+        <div class="project-item">
+            <input type="text" class="project-name " placeholder="888000 重庆解放碑项目" name="project-name">
+        </div>
+        <div class="project_problem">
+            <textarea class="input-textarea input-div" idom="note" placeholder="故障描述" maxlength=64></textarea>
+        </div>
+        <div class="submit-picture">
+            <div class="file-upload ">
+                
+                <div class="file-add">
+                    <span class="icon-add-files"></span>
+                </div>
+                <div class="file-error hide" idom="fileError"><i class="icon-mark"></i><span>错误错误</span></div>
+                <div class="fileuploading hide">图片上传中...</div>
+            </div>
+            <div class="submit-picture-tips">上传故障照片</div>
+        </div>
+        <div class="project-set-user">
+            <input type="text" class=" input-half project-set-user-name" placeholder="委派销售名称  ">
+            <input type="text" class=" input-half project-set-user-id" placeholder="委派销售工号  ">
+        </div>
+        <button id="submit" type="submit" class="btn btn-primary">提交</button>
+    </form>
+</div>

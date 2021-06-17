@@ -1,4 +1,5 @@
 {
+  "login/login.pg.html_": [],
   "fontReview/Font/font.pg.html": [
     "track/Track/main.md.html"
   ],
@@ -19,16 +20,23 @@
   "admin/serviceProcess/admin@service-process.pg.html_": [
     "common/Header/main.md.html"
   ],
+  "admin/workersMap/admin@workers-map.pg.html_": [
+    "common/Header/main.md.html"
+  ],
   "home/FiveHundred/500.pg.html_": [],
   "home/FiveZeroTwo/502.pg.html_": [],
   "home/FourZeroFour/404.pg.html_": [],
   "salesmen/demandList/salesmen@demand-list.pg.html_": [
     "common/Header/main.md.html"
   ],
-  "home/test/IModuleLoader/test@imodule.pg.html_": [],
-  "home/test/IModules/test@index.pg.html_": [],
+  "salesmen/editDemand/salesmen@edit-demand.pg.html_": [
+    "common/Header/main.md.html"
+  ],
+  "home/test/ApiDemo/test@api.pg.html_": [],
   "home/test/ImageUploaderDemo/test@image-uploader.pg.html_": [
     "misc/ImageUploader/main.md.html"
   ],
+  "home/test/IModuleLoader/test@imodule.pg.html_": [],
+  "home/test/IModules/test@index.pg.html_": [],
   "home/test/TestAgent/test@agent.pg.html_": []
 }
